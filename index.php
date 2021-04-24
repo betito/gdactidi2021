@@ -15,6 +15,17 @@ $conexao = connect();
     <meta charset="UTF-8"/>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 </head>
+
+<style>
+    .mbox {
+        width: 90%;
+        padding: 10px;
+        background: #8f0000;
+        color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+</style>
+
 <body>
 <div class="container">
     <header id="cabecalho">
@@ -72,6 +83,20 @@ $ciclo= $row["ciclo"];
         <!--<center> <strong><font color="red">IMPORTANTE:  Encerramento em 01 de Novembro (HOJE) às 11:00.</font></strong></center><br/>-->
         <center> <strong><font size= "4" color="red"><?php echo $ciclo; ?>° CICLO</font></strong></center><br>
 
+        <center> 
+
+            <div class="mbox">
+                <b class="font18">CICLO 2020 - 2021</b><br/><br/>
+                A COGPE informa que <b>está suspenso temporariamente</b> o período de avaliação do IDI
+                referente ao ciclo 2020/2021 até que se obtenha uma orientação superior formal 
+                sobre o assunto. Consequentemente, <b>não haverá alteração financeira até a 
+                obtenção da referida orientação</b>.
+            </div>
+
+        </center><br>
+
+
+
         <blockquote style="text-align:  justify; font-style: italic;">Disp&otilde;e sobre a avalia&ccedil;&atilde;o de desempenho dos
         servidores ocupantes de cargo de provimento
         efetivo nesta Institui&ccedil;&atilde;o (INPA), com
@@ -103,11 +128,11 @@ $ciclo= $row["ciclo"];
 
         <br>
 
-        <a href="tela_grupos.php">
+        <!--<a href="tela_grupos.php">
             <span class="botao">
                 AVAN&Ccedil;AR
             </span>
-        </a>
+        </a>-->
 
         <br>
 
